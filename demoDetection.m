@@ -18,12 +18,13 @@ DEinit_n100_ms4 ;
 image_name='test_image_1.jpg';
 
 %% get 3D chair folder names
-load('all_chair_names_1394.mat','folder_names')
+load([MODELS_DIR '/all_chair_names.mat'],'folder_names')
 N_chairs=length(folder_names);
 
 
 %% get model for each chair and on each image
-for chair_id=1:20:60%%N_chairs
+%% WARNING: this part should be parralelized or used for less chairs
+for chair_id=1:20:N_chairs
     match_DEs_to_image_by_20(DATA_FOLDER,RESULTS_FOLDER,DEparams,chair_id,image_name,folder_names); % compute potential matches for each 3D chair and test image
 end
 
