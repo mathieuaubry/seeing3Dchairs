@@ -33,7 +33,7 @@ $ git clone https://github.com/mathieuaubry/seeing3Dchairs.git
    >> compile;
    ```
 
-2. demoGetAllDEs.m is a script that compute the discriminative elements from a set of rendered views. It must be run before doing detection. Alternatively, you can download our pre-computed [discriminative elements](http://www.di.ens.fr/willow/research/seeing3Dchairs/data/DEs.tar)
+2. demoGetAllDEs.m is a script that compute the discriminative elements from a set of rendered views. It must be run before doing detection. Alternatively, you can download our pre-computed [discriminative elements](http://www.di.ens.fr/willow/research/seeing3Dchairs/data/DEs.tar).
 
 3. demoDetection.m is a script that uses the discriminative elements to detect chairs in a test image. It generates an HTML file visualizing the results after non-maximum suppression.
 
