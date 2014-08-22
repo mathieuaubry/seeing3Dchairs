@@ -30,7 +30,7 @@ end
 
 
 %% get all the models for a given image
-get_all_model_function(RESULTS_FOLDER,20);%N_chairs); % concatenate all potential model for a given image
+get_all_model_function(RESULTS_FOLDER,N_chairs); % concatenate all potential model for a given image
 
 
 
