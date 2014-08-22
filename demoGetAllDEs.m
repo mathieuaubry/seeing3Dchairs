@@ -5,13 +5,13 @@
 
 
 %% folders definitions (yu may want to modify themo)
-MODELS_DIR='./chair_images';
+MODELS_DIR='./rendered_chairs';
 DE_DIR='./DEs';
 mkdir(DE_DIR)
 addpath('./code');
 DEinit_n100_ms4;
 
-load('all_chair_names_1394.mat','folder_names','instance_names')
+load([MODELS_DIR '/all_chair_names.mat'],'folder_names','instance_names')
 N_chairs=length(folder_names);
 
 tic
