@@ -48,5 +48,5 @@ examples](XXX).
 ### ACKNOWLEDGMENTS:
 
 Some of the functions provided are derived from other people implementation:
-- bboxoverlap
+- Ross Girshick and Pedro Felzenswalb: bboxoverlap
 - Pedro Felzenswalb: http://www.cs.berkeley.edu/~rbg/latent/index.html. Functions features.cc
