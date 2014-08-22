@@ -35,9 +35,11 @@ for model_id=model_id_:min(model_id_+19,length(folder_names))
     
     
     %% detect DEs in I
-        
+        try
         load(sprintf('%s/%s/all_DEs_calib.mat',DATA_FOLDER,folder_names{model_id}),'all_DEs');
-        
+        catch error
+        error(sprintf('The discriminative elements for model %i were not found. Please compute the elements first or download them from our website.\n',model_id));
+        end
         responses=response_from_hogs(hogs_boxes,hogs_sizes,all_DEs,DEparams);
         
         
