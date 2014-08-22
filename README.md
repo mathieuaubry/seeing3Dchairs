@@ -45,7 +45,7 @@ You will need to download the [rendered views of the chair CAD
 models](http://www.di.ens.fr/willow/research/seeing3Dchairs/data/rendered_chairs.tar), [HOG whitening parameters](http://www.di.ens.fr/willow/research/seeing3Dchairs/data/whitening_params.mat), and [negative training
 examples](http://www.di.ens.fr/willow/research/seeing3Dchairs/data/negative_hogs.mat).
 
-You can also download our pre-computed discriminative elements [here](http://www.di.ens.fr/willow/research/seeing3Dchairs/data/DEs.tar).
+You can also download our pre-computed [discriminative elements](http://www.di.ens.fr/willow/research/seeing3Dchairs/data/DEs.tar).
 
 ### ACKNOWLEDGMENTS:
 
