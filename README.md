@@ -42,8 +42,8 @@ should be parallelized to use the full set in reasonable time. The
 three functions to parallelize are indicated in the comments of the scripts.
 
 You will need to download the [rendered views of the chair CAD
-models](XXX), [whitened HOG parameters](XXX), and [negative training
-examples](XXX).
+models](http://www.di.ens.fr/willow/research/seeing3Dchairs/data/rendered_chairs.tar), [HOG whitening parameters](http://www.di.ens.fr/willow/research/seeing3Dchairs/data/whitening_params.mat), and [negative training
+examples](http://www.di.ens.fr/willow/research/seeing3Dchairs/data/negative_hogs.mat).
 
 ### ACKNOWLEDGMENTS:
 
