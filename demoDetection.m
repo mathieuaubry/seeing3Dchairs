@@ -6,7 +6,7 @@
 RESULTS_FOLDER='./results';
 HTML_FOLDER='./html';
 DATA_FOLDER='./DEs';
-MODELS_DIR='./chair_images';
+MODELS_DIR='./rendered_chairs';
 
 addpath('./code');
 
