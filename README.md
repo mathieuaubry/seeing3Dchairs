@@ -47,6 +47,4 @@ examples](XXX).
 
 ### ACKNOWLEDGMENTS:
 
-Some of the functions provided are derived from other people implementation:
-- Ross Girshick and Pedro Felzenswalb: bboxoverlap
-- Pedro Felzenswalb: http://www.cs.berkeley.edu/~rbg/latent/index.html. Functions features.cc
+The functions features.cc and bboverlap.m  are derived from Ross Girshick and Pedro Felzenswalb implementation available on https://github.com/rbgirshick/voc-dpm 
