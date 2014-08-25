@@ -1,4 +1,4 @@
-function [all_models]=nms(RESULTS_FOLDER)
+function [all_models]=nms(RESULTS_FOLDER,image_name)
 % perform non-max suppression
 
 all_models={};

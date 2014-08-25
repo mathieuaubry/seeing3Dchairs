@@ -24,6 +24,7 @@ N_chairs=length(folder_names);
 
 %% get model for each chair and on each image
 %% WARNING: this part should be parralelized or used for less chairs
+%% takes ~1 minute per call (3 seconds per chair, 0.5 second per view)
 for chair_id=1:20:N_chairs
     match_DEs_to_image_by_20(DATA_FOLDER,RESULTS_FOLDER,DEparams,chair_id,image_name,folder_names); % compute potential matches for each 3D chair and test image
 end
@@ -36,9 +37,9 @@ get_all_model_function(RESULTS_FOLDER,N_chairs); % concatenate all potential mod
 
 
 %% perform non-max suppression
-nms(RESULTS_FOLDER)
+all_models=nms(RESULTS_FOLDER,image_name);
 
 
 
 %% generate HTML to visualize results
-generate_html(all_models,HTML_FOLDER)
+generate_html(all_models,HTML_FOLDER,DATA_FOLDER,image_name,folder_names);

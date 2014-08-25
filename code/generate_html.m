@@ -1,11 +1,11 @@
-function []=generate_html(all_models,HTML_FOLDER)
+function []=generate_html(all_models,HTML_FOLDER,DATA_FOLDER,image_name,folder_names)
 %% generate HTML to visualize results
 
 filename=sprintf('%s/index.html',HTML_FOLDER);
 html_file=fopen(filename,'w');
 title_page='Matches';
 title='Matches';
-comments='<img src="test_image.jpg" style="height:15em;" /> Top retrieved models after non-max suppression for this image.';
+comments='<img src="test_image.jpg" style="height:15em;" /> <p>Top retrieved models after non-max suppression for this image.</p>';
 I=im2double(imread(image_name));
 imwrite(I,sprintf('%s/test_image.jpg',HTML_FOLDER));
 title_cols={'order' 'confidence' 'detection' 'model'};
