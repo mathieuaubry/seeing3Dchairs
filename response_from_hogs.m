@@ -11,7 +11,6 @@ for view_id=1:length(all_DEs)
 
     responses_{view_id}=responses;
 end
-tic
 for scale_index=1:length(hogs_boxes)
     hogs_box=hogs_boxes{scale_index};
     hogs_size=hogs_sizes{scale_index};
