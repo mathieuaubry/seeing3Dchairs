@@ -44,6 +44,7 @@ three functions to parallelize are indicated in the comments of the scripts.
 You will need to download the [rendered views of the chair CAD
 models](http://www.di.ens.fr/willow/research/seeing3Dchairs/data/rendered_chairs.tar), [HOG whitening parameters](http://www.di.ens.fr/willow/research/seeing3Dchairs/data/whitening_params.mat), and [negative training
 examples](http://www.di.ens.fr/willow/research/seeing3Dchairs/data/negative_hogs.mat).
+NB: if you downloaded the rendered models before August 27th 2014, please also download [this file](http://www.di.ens.fr/willow/research/seeing3Dchairs/data/all_chair_names.mat) and add it in the MODELS_DIR folder.
 
 You can also download our pre-computed [discriminative elements](http://www.di.ens.fr/willow/research/seeing3Dchairs/data/DEs.tar) to be able to run detection directly.
 
