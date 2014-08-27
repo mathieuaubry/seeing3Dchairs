@@ -4,7 +4,7 @@
 % our website
 
 
-%% folders definitions (yu may want to modify themo)
+%% folders definitions (you may want to modify them)
 MODELS_DIR='./rendered_chairs';
 DE_DIR='./DEs';
 mkdir(DE_DIR)
