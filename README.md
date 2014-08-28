@@ -7,7 +7,7 @@ in the following paper:
    Mathieu Aubry, Daniel Maturana, Alexei A. Efros, Bryan C. Russell, and Josef Sivic.
    Seeing 3D chairs: exemplar part-based 2D-3D alignment using a large dataset of CAD models.
    CVPR, 2014.
-   [PDF](XXX) | [BibTeX](XXX) | [Project page](http://www.di.ens.fr/willow/research/seeing3Dchairs)
+   [PDF](http://www.di.ens.fr/willow/research/seeing3Dchairs/texts/Aubry14.pdf) | [BibTeX](http://www.di.ens.fr/willow/research/seeing3Dchairs/texts/Aubry14.html) | [Project page](http://www.di.ens.fr/willow/research/seeing3Dchairs)
 
 Note that this implementation has minor differences with the one used to generate the results shown in the paper.
 
