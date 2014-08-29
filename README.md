@@ -24,14 +24,14 @@ Alternatively, you can clone it from GitHub as follows:
 $ git clone https://github.com/mathieuaubry/seeing3Dchairs.git
 ```
 
-### DOWNLOADING THE DATA
+### DOWNLOADING THE DATA:
 
 
 You will need to download the [rendered views of the chair CAD
 models](http://www.di.ens.fr/willow/research/seeing3Dchairs/data/rendered_chairs.tar), [HOG whitening parameters](http://www.di.ens.fr/willow/research/seeing3Dchairs/data/whitening_params.mat), and [negative training
 examples](http://www.di.ens.fr/willow/research/seeing3Dchairs/data/negative_hogs.mat).
 
-You can also download our pre-computed [discriminative elements](http://www.di.ens.fr/willow/research/seeing3Dchairs/data/DEs.tar) to be able to run detection directly.
+You may also download our pre-computed [discriminative elements](http://www.di.ens.fr/willow/research/seeing3Dchairs/data/DEs.tar) to run the detection script directly.
 
 
 ### RUNNING THE CODE:
@@ -42,10 +42,10 @@ You can also download our pre-computed [discriminative elements](http://www.di.e
    >> compile;
    ```
 
-2. (Optional) demoGetAllDEs.m is a script that compute the discriminative elements from a set of rendered views. It must be run before doing detection. 
+2. (Optional) [demoGetAllDEs.m](https://github.com/mathieuaubry/seeing3Dchairs/blob/master/demoGetAllDEs.m) is a script that computes the discriminative elements from a set of rendered views. It must be run before doing detection. 
 Alternatively, you can download our pre-computed [discriminative elements](http://www.di.ens.fr/willow/research/seeing3Dchairs/data/DEs.tar).
 
-3. demoDetection.m is a script that uses the discriminative elements to detect chairs in a test image. It generates an HTML file visualizing the results after non-maximum suppression.
+3. [demoDetection.m](https://github.com/mathieuaubry/seeing3Dchairs/blob/master/demoDetection.m) is a script that uses the discriminative elements to detect chairs in a test image. It generates an HTML file visualizing the results after non-maximum suppression.
 
 Both scripts can be used directly for a small number of 3D models, but
 should be parallelized to use the full set in reasonable time. The
@@ -53,4 +53,4 @@ three functions to parallelize are indicated in the comments of the scripts.
 
 ### ACKNOWLEDGMENTS:
 
-The functions features.cc and bboverlap.m  are derived from Ross Girshick and Pedro Felzenswalb implementation available on https://github.com/rbgirshick/voc-dpm 
+The functions features.cc and bboverlap.m have been adapted from Ross Girshick's and Pedro Felzenswalb's implementation available at https://github.com/rbgirshick/voc-dpm
