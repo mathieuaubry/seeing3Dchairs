@@ -24,6 +24,15 @@ Alternatively, you can clone it from GitHub as follows:
 $ git clone https://github.com/mathieuaubry/seeing3Dchairs.git
 ```
 
+### DOWNLOADING THE DATA
+
+
+You will need to download the [rendered views of the chair CAD
+models](http://www.di.ens.fr/willow/research/seeing3Dchairs/data/rendered_chairs.tar), [HOG whitening parameters](http://www.di.ens.fr/willow/research/seeing3Dchairs/data/whitening_params.mat), and [negative training
+examples](http://www.di.ens.fr/willow/research/seeing3Dchairs/data/negative_hogs.mat).
+
+You can also download our pre-computed [discriminative elements](http://www.di.ens.fr/willow/research/seeing3Dchairs/data/DEs.tar) to be able to run detection directly.
+
 
 ### RUNNING THE CODE:
 
@@ -33,20 +42,14 @@ $ git clone https://github.com/mathieuaubry/seeing3Dchairs.git
    >> compile;
    ```
 
-2. demoGetAllDEs.m is a script that compute the discriminative elements from a set of rendered views. It must be run before doing detection. Alternatively, you can download our pre-computed [discriminative elements](http://www.di.ens.fr/willow/research/seeing3Dchairs/data/DEs.tar).
+2. (Optional) demoGetAllDEs.m is a script that compute the discriminative elements from a set of rendered views. It must be run before doing detection. 
+Alternatively, you can download our pre-computed [discriminative elements](http://www.di.ens.fr/willow/research/seeing3Dchairs/data/DEs.tar).
 
 3. demoDetection.m is a script that uses the discriminative elements to detect chairs in a test image. It generates an HTML file visualizing the results after non-maximum suppression.
 
 Both scripts can be used directly for a small number of 3D models, but
 should be parallelized to use the full set in reasonable time. The
 three functions to parallelize are indicated in the comments of the scripts.
-
-You will need to download the [rendered views of the chair CAD
-models](http://www.di.ens.fr/willow/research/seeing3Dchairs/data/rendered_chairs.tar), [HOG whitening parameters](http://www.di.ens.fr/willow/research/seeing3Dchairs/data/whitening_params.mat), and [negative training
-examples](http://www.di.ens.fr/willow/research/seeing3Dchairs/data/negative_hogs.mat).
-(NB: if you downloaded the rendered models before August 27th 2014, please also download [this file](http://www.di.ens.fr/willow/research/seeing3Dchairs/data/all_chair_names.mat) and add it in the MODELS_DIR folder)
-
-You can also download our pre-computed [discriminative elements](http://www.di.ens.fr/willow/research/seeing3Dchairs/data/DEs.tar) to be able to run detection directly.
 
 ### ACKNOWLEDGMENTS:
 
