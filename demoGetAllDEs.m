@@ -16,10 +16,11 @@ N_chairs=length(folder_names);
 
 tic
 %% WARNING: this part should be parallelized or used for less chair models
-%% each function call compute the Discriminative elements of 20 chairs 
-%% and takes ~80 minutes (~4 minutes per model, ~8 seconds per view)
-for chair_id=1:20:N_chairs
-        get_DEs_chair(folder_names,chair_id,instance_names,MODELS_DIR,DE_DIR,DEparams);
+%% each function call compute the Discriminative elements of K chairs 
+%% With K=20 it takes ~80 minutes (~4 minutes per model, ~8 seconds per view)
+K=20;
+for chair_id=1:K:N_chairs
+        get_DEs_chair_by_K(folder_names,chair_id,instance_names,MODELS_DIR,DE_DIR,DEparams,K);
 end
 toc
 

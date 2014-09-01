@@ -1,8 +1,8 @@
-function get_DEs_chair(folder_names,folder_id_,content_name,MODELS_DIR,RESULTS_FOLDER,DEparams)
+function get_DEs_chair_by_K(folder_names,folder_id_,content_name,MODELS_DIR,RESULTS_FOLDER,DEparams,K)
   hogs_name='./negative_hogs.mat';
         h=load(hogs_name);
        
-for folder_id=folder_id_:folder_id_
+for folder_id=folder_id_:folder_id_+K-1
 %try
 %    load(sprintf('%s/%s/all_DEs_calib.mat',RESULTS_FOLDER,folder_names{folder_id}));
 %catch err
