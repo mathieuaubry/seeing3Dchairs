@@ -1,4 +1,4 @@
-function match_DEs_to_image_by_20(DATA_FOLDER,RESULTS_FOLDER,DEparams,model_id_,image_name,folder_names)
+function match_DEs_to_image_by_K(DATA_FOLDER,RESULTS_FOLDER,DEparams,model_id_,image_name,folder_names,K)
 
 %% compute hog pyramid on the input image
 I=imread(image_name);
@@ -31,7 +31,7 @@ end
 
 
 
-for model_id=model_id_:min(model_id_+19,length(folder_names))
+for model_id=model_id_:min(model_id_+K-1,length(folder_names))
     
     
     %% detect DEs in I

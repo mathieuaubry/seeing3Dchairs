@@ -24,9 +24,10 @@ N_chairs=length(folder_names);
 
 %% get model for each chair and on each image
 %% WARNING: this part should be parralelized or used for less chairs
-%% takes ~3 minute per call on a single core (9 seconds per chair, 1.5 second per view)
-for chair_id=1:20:N_chairs
-    match_DEs_to_image_by_20(DATA_FOLDER,RESULTS_FOLDER,DEparams,chair_id,image_name,folder_names); % compute potential matches for each 3D chair and test image
+%% For K=20 it takes ~3 minute per call on a single core (9 seconds per chair, 1.5 second per view)
+K=20;
+for chair_id=1:K:N_chairs
+    match_DEs_to_image_by_K(DATA_FOLDER,RESULTS_FOLDER,DEparams,chair_id,image_name,folder_names,K); % compute potential matches for each 3D chair and test image
 end
 
 

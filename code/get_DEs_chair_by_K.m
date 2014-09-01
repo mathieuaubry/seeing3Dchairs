@@ -2,7 +2,7 @@ function get_DEs_chair_by_K(folder_names,folder_id_,content_name,MODELS_DIR,RESU
   hogs_name='./negative_hogs.mat';
         h=load(hogs_name);
        
-for folder_id=folder_id_:folder_id_+K-1
+for folder_id=folder_id_:min(folder_id_+K-1,length(folder_names))
 %try
 %    load(sprintf('%s/%s/all_DEs_calib.mat',RESULTS_FOLDER,folder_names{folder_id}));
 %catch err
