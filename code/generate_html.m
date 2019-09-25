@@ -20,7 +20,13 @@ for i=1:min(5,length(order))
     imwrite(O,sprintf('%s/figures/detection_%i.jpg',HTML_FOLDER,i));
     
     load(sprintf('%s/%s/all_DEs_calib.mat',DATA_FOLDER,folder_names{all_models.chair_id(i)}),'all_DEs');
-    O=im2double(imread(all_DEs{all_models.view_id(i)}.view_name));%[MODELS_DIR '/' {all_models.view_id(i)} '/renders/']));
+    % get the image path with the wrong absolute path
+    toCut = all_DEs{all_models.view_id(i)}.view_name;
+    % cut it into to pieces
+    cut = strsplit(toCut, 'chair_images/');
+    % take only the right relative path
+    toOpen = sprintf('./rendered_chairs/%s', cut{1,2});
+    O=im2double(imread(toOpen));%all_DEs{all_models.view_id(i)}.view_name));%[MODELS_DIR '/' {all_models.view_id(i)} '/renders/']));
     imwrite(O,sprintf('%s/figures/model_%i.jpg',HTML_FOLDER,i));
     
     color='black';
